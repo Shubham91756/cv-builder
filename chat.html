@@ -1,0 +1,40 @@
+<!-- API Key input box -->
+<div id="apiKeyInputBox" style="padding: 10px; background: #f3f3f3;">
+  <input type="password" id="apiKey" placeholder="Enter OpenAI API Key" style="width: 80%; padding: 8px;" />
+  <button onclick="saveApiKey()" style="padding: 8px;">Save Key</button>
+</div>
+
+<!-- chat.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Chat Assistant</title>
+  <link rel="stylesheet" href="chat.css" />
+</head>
+<body>
+  <!-- API Key Input -->
+  <div id="apiKeyInputBox" style="padding: 10px; background: #f3f3f3;">
+    <input type="password" id="apiKey" placeholder="Enter OpenAI API Key" style="width: 80%; padding: 8px;" />
+    <button onclick="saveApiKey()" style="padding: 8px;">Save Key</button>
+  </div>
+
+  <!-- Chat UI -->
+  <div class="chat-toggle" onclick="toggleChat()">💬</div>
+
+  <div class="chat-container" id="chatBox">
+    <div class="chat-header">
+      <span>AI Assistant</span>
+      <button onclick="toggleChat()">✖</button>
+    </div>
+    <div class="chat-messages" id="chatMessages"></div>
+    <div class="chat-input">
+      <textarea id="userInput" placeholder="Type your message..." onkeydown="handleKey(event)"></textarea>
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script src="chat.js" defer></script>
+</body>
+</html>
