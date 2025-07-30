@@ -1,17 +1,20 @@
-# Professional CV Builder
+# 📄 CV Builder
 
-A modern, responsive CV/Resume builder web application with real-time preview.
+A professional resume/CV builder with live preview, built using HTML, CSS, and vanilla JavaScript.
 
-## Features
-- Real-time preview
-- PDF export
-- Mobile responsive
-- Customizable colors and fonts
+🔗 **Live Demo**: [View Online](https://shubham91756.github.io/cv-builder/)
 
-## How to use
-1. Open index.html in your browser
-2. Fill in your information
-3. Download as PDF
+## ✨ Features
 
-## Live Demo
-[View Demo](https://Shubham91756.github.io/cv-builder/)II
+- Realtime CV preview
+- Add/remove experience, education, skills, languages, projects
+- Color customization
+- Print to PDF supported
+- Responsive layout
+
+## 🛠 How to Run Locally
+
+```bash
+git clone https://github.com/Shubham91756/cv-builder.git
+cd cv-builder
+open index.html # or use Live Server in VSCode
